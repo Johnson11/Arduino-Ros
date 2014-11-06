@@ -1,0 +1,8 @@
+prefix=/home/justin/catkin_ws/devel
+
+Name: arduinotfconverter
+Description: Description of arduinotfconverter
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/justin/catkin_ws/devel/lib 
+Requires: 

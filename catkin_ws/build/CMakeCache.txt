@@ -259,6 +259,12 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Value Computed by CMake
+arduinotfconverter_BINARY_DIR:STATIC=/home/justin/catkin_ws/build/arduinotfconverter
+
+//Value Computed by CMake
+arduinotfconverter_SOURCE_DIR:STATIC=/home/justin/catkin_ws/src/arduinotfconverter
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/hydro/share/catkin/cmake
 
@@ -325,6 +331,9 @@ roscpp_traits_DIR:PATH=/opt/ros/hydro/share/roscpp_traits/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/hydro/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/hydro/share/rospy/cmake
 
 //Value Computed by CMake
 rosserial_BINARY_DIR:STATIC=/home/justin/catkin_ws/build/rosserial/rosserial
@@ -523,7 +532,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=12
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
