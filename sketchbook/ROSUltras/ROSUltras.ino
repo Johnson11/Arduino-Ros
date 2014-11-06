@@ -3,22 +3,27 @@
  * 
  * This example is for the Maxbotix Ultrasound rangers.
  */
-#include <iostream>
-#define USE_USBCON
+
 #include <ros.h>
 #include <ros/time.h>
 #include <sensor_msgs/Range.h>
-
+#include <tf/transform_broadcaster.h>
 
 ros::NodeHandle  nh;
 
 sensor_msgs::Range range_msg;
 ros::Publisher pub_range( "/ultrasound", &range_msg);
 
+
+char base_link[] = "/base_link";
+char odom[] = "/odom";
+
 const int pinTrigger = 3;
 const int pinEcho = 2;
 
 char frameid[] = "/ultrasound";
+
+
 
 float getRange_Ultrasound(){
   long duration;
@@ -64,6 +69,8 @@ void loop()
     pub_range.publish(&range_msg);
     range_time =  millis() + 50;
   }
-  
   nh.spinOnce();
+
+
+  
 }
